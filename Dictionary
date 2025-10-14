@@ -1,0 +1,22 @@
+list1 = [("name", "Elie"), ("job", "Instructor")]
+dict1 = dict(list1)
+print(dict1)
+
+keys = ["CA", "NJ", "RI"]
+values = ["California", "New Jersey", "Rhode Island"]
+dict2 = dict(zip(keys, values))
+print(dict2)
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+dict3 = {v: 0 for v in vowels}
+print(dict3)
+
+import string
+alphabet = string.ascii_uppercase
+dict4 = {i + 1: letter for i, letter in enumerate(alphabet)}
+print(dict4)
+
+word = "awesome sauce"
+vowels = "aeiou"
+vowel_count = {v: word.count(v) for v in vowels}
+print(vowel_count)
